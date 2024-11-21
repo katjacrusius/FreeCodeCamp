@@ -8,10 +8,6 @@ def player(prev_play, opponent_history=[]):
     if prev_play != "":
         opponent_history.append(prev_play)
 
-    # Interestingly, 3 to 6 works best, as in we win more than 60%.
-    # If n is larger than 6, we start to get terrible result.
-    # I guess it's becauase we don't have enough data to predict once n get that
-    # larger, we only play 1000 games.
     n = 3
 
     hist = opponent_history
